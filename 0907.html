@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pink의 블로그</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Pink의 블로그</h1>
+    <p>브라우저 창의 크기를 바꿔보세요.</p>
+  </div>
+  <ul class="topnav">
+    <li><a href="#">일본 문화</a></li>
+    <li><a href="#">글쓰기</a></li>
+    <li><a href="#">아잉 1</a></li>
+    <li><a href="#">일본 문학</a></li>
+    <li><a href="#">컴프 2</a></li>
+    <li><a href="#">전산 2</a></li>
+    <li style="float:right"><a class="active" href="homepage.html">Home</a></li>
+  </ul>
+
+  <div class="center">
+    <div class="pagination">
+      <a href="#">&laquo</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">&raquo</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>일본 문학</h2>
+        <h4>2021년 9월 7일</h4>
+        <section>
+          <h4>배운 점</h4>
+        </section>
+        <p>
+          도나 해러웨이의 <해러웨이 선언문>을 주제로 의견 발표.
+        </p>
+        <section>
+          <h4>어려웠던 점</h4>
+        </section>
+          <ol>
+            <li>책 자체가 어렵다 &rarr; 담주 화욜까지 차분히 다시 읽어본다
+            </li>
+            <li>대화의 흐름을 따라가기 어렵다 &rarr; 모르겠으면 못 들은 셈 친다
+            </li>
+            <li>발표할 용기를 내기 어렵다 &rarr; 블랙보드의 '손 들기' 시스템을 이용한다
+            </li>
+          </ol>
+        <section>
+          <h4>더 알고 싶은 점</h4>
+        </section>
+        <ul>
+          <li>작가는 페미니즘을 비판하려는 걸까?</li>
+          <li>작가가 생각하는 '사이보그'는 뭘까?</li>
+          <li>작가가 없애려는 이분법에는 어떤 것이 있을까?</li>
+          <li>작가는 자본주의를 어떻게 생각할까?</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>컴프 2</h2>
+        <h4>2021년 9월 7일</h4>
+        <section>
+          <h4>배운 점</h4>
+          <ol>
+            <li>
+              파이썬 개발 환경 설정하기
+              <ol>
+                <li>설치 O : 우분투(Ubuntu)
+                <ul>
+                    <li>lpython</li>
+                    <li>Jupiter notebook (권장)</li>
+                  </ul>
+                </li>
+                <li>설치 O : 윈도우(Windows)
+                <ul>
+                    <li>파이썬 공식 홈피</li>
+                    <li>아나콘다 (권장)</li>
+                  </ul>
+                </li>
+                <li>설치 X : 온라인 개발 도구
+                <ul>
+                    <li><a href="https://repl.it/">REPL</a></li>
+                    <li><a href="https://colab.research.google.com/">Colabatory</a></li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+            <li>
+              파이썬 스크립트 작성하기
+            </li>
+          </ol>
+          <p>
+            '#!/usr/bin/env python3' | 파이썬 인터프리터로 실행, env 로 실행 경로를 탐색.
+          </p>
+          <p>
+            '#!/usr/bin/python3' | 위 구문과 결과는 동일. 그러나 잘 쓰이지 않는다.
+          </p>
+        </section>
+        <section>
+          <h4>어려웠던 점</h4>
+          <p>
+            Unix 에서 shebang 의 동작 원리 이해하기.
+          </p>
+        </section>
+        <section>
+          <h4>더 알고 싶은 점</h4>
+        <p>
+          (질문)?
+        </p>
+        </section>
+        </div>
+      <div class="card">
+        <h2>전산 2</h2>
+        <h4>2021년 9월 7일</h4>
+        <section>
+          <h4>배운 점</h4>
+          <ol>
+            <li>표본 공간 (Sample Space)
+              <ul>
+                <li>Sample Space (S) : 가능한 모든 사건의 집합</li>
+              </ul>
+            </li>
+            <li>사건 (Events)</li>
+              <ul>                
+                <li>Event (A) : 표본공간의 부분집합</li>
+                <li>Complement (A') : 여사건</li>
+                <li>Intersection (A &cap; B) : 교집합 </li>
+                <li>Disjoint (A &cap; B = &empty;) : 배반사건 (교집합 X)</li>
+                <li>Union (A &cup; B) : 합집합</li>
+              </ul>
+            <li>
+              경우의 수 (Couting Sample points)
+              <ul>
+                <li>
+                  Factorial : 팩토리얼
+                  <p>
+                    n! = n(n-1) &#8943; 2 &sdot; 1 (n은 0 이상의 정수, 0! = 1)
+                  </p>
+                </li>
+                <li>
+                  Permutation : 순열
+                  <ul>
+                    <li>
+                      n명을 줄 세우는 방법은 n!
+                    </li>
+                    <li>
+                      n명 중 r명을 줄 세우는 방법은 n! / (n - r)!
+                    </li>
+                    <li>
+                      n명을 원탁에 앉히는 방법은 (n - 1)!
+                    </li>
+                    <li>
+                      AABB를 재배열해 나오는 문자열은 총 4! / ( 2! * 2! )
+                    </li>
+                    <li>
+                      색종이 n장 중 같은 색깔이 각각 n1, n2, &#8943; , nm장 있을 때 이들을 올려놓는 방법은 n! / n1! n2! &#8943; nm!
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Combination : 조합
+                  <p>
+                    n명 중 r명을 뽑는 방법은 n! / r! (n - r)!
+                  </p>
+                </li>
+              </ul>
+          </ol>
+        </section>
+        <section>
+          <h4>어려웠던 점</h4>
+          <p>
+            아직 없음. 다만 지금부터 전공서를 봐두지 않으면 수업을 따라가기 어려워질 것 같다.
+          </p>
+        </section>
+        <section>
+          <h4>더 알고 싶은 점</h4>
+          <p>
+            아직 없음.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <img width="100%" src="프로필.jpg" alt="no image">
+        <p>프로필</p>
+        <p>Pink(droon78)</p>
+      </div>
+      <div class="card">
+        <h3>인기글</h3>
+        <div class="fakeimg">Image</div>
+        <div class="fakeimg">Image</div>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <h3>이웃 추가</h3>
+        <p>이웃 **명</p>
+      </div>
+    </div>
+ </div>
+
+<div class="footer">
+      <p>Copyright© Pink<br>All rights reserved.</p>
+</div>
+
+</body>
+</html>

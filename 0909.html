@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pink의 블로그</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Pink의 블로그</h1>
+    <p>브라우저 창의 크기를 바꿔보세요.</p>
+  </div>
+  <ul class="topnav">
+    <li><a href="#">일본 문화</a></li>
+    <li><a href="#">글쓰기</a></li>
+    <li><a href="#">아잉 1</a></li>
+    <li><a href="#">일본 문학</a></li>
+    <li><a href="#">컴프 2</a></li>
+    <li><a href="#">전산 2</a></li>
+    <li style="float:right"><a class="active" href="homepage.html">Home</a></li>
+  </ul>
+
+  <div class="center">
+    <div class="pagination">
+      <a href="#">&laquo</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">&raquo</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>일본 문학</h2>
+        <h4>2021년 9월 9일, 휴강</h4>
+      </div>
+      <div class="card">
+        <h2>컴프 2</h2>
+        <h4>2021년 9월 9일</h4>
+        <div class="section">
+          <h4>배운 점</h4>
+        </div>
+        <ol>
+          <li>The Way of the Program</li>
+          <ul>
+            <li>The Python Programming Language</li>
+              <p>
+                High-level : needs translation / portable, clean, accurate...
+              </p>
+              <p>
+                Compiler (C etc.) / Interpreter (Python) &rarr; interactive mode / script mode
+              </p>
+            <li>What is a Program?</li>
+              <p>
+                A program is a sequence of instructions about how to perform a computation.
+              </p>
+              <p>
+                Basic components of a Program (Top-down approach!)
+                <ul>
+                  <li>input</li>
+                  <li>output</li>
+                  <li>conditional execution</li>
+                  <li>repititoon</li>
+                </ul>
+              </p>
+            <li>What is Debugging?</li>
+              <p>
+                Various errors :
+                <ul>
+                  <li>Syntax Errors (Fix : Code)</li>
+                  <li>Runtime Errors (Fix : Environment)</li>
+                  <li>Semantic Errors (Fix : Logic)</li>
+                </ul>
+              </p>
+            <li>Experimental Debugging (a.k.a 지적 유희)</li>
+            <li>Formal and Natural Languages</li>
+              <p>
+                Parsing : To figure out the structure of the sentence
+              </p>
+              <p>
+                Difference : Formal v.s Natural
+              </p>
+              <table style="width:100%">
+                <tr>
+                  <th></th>
+                  <th>Ambiguity</th>
+                  <th>Redundancy</th>
+                  <th>Literalness</th>
+                </tr>
+                <tr>
+                  <th>Formal</th>
+                  <td>O</td>
+                  <td>Conscise</td>
+                  <td>High</td>
+                </tr>
+                <tr>
+                  <th>Natural</th>
+                  <td>X</td>
+                  <td>Verbose</td>
+                  <td>Low</td>
+                </tr>
+              </table>
+              <p>
+                Tips for reading programs :
+                <ul>
+                  <li>Time-consuming!</li>
+                  <li>Parse the structure!</li>
+                  <li>Details matter!</li>
+                </ul>
+              </p>
+            <li>산술 연산자, 변수, 자료형 etc.</li>
+          </ul>
+          <li>
+            Variable, expressions and statements (변수, 표현식, 문장) <span id="dots">(...)</span>
+          </li>
+        </ol>
+        <div id="more">
+          <p>
+            Problem solving:
+          </p>
+          <p>
+            The process of formulating a problem, finding a solution, and expressing the solution.
+          </p>
+          <p>
+            High-level language:
+          </p>
+          <p>
+            A programming language like Python that is designed to be easy for humans to read and write.
+          </p>
+          <p>
+            Low-level language:
+          </p>
+          <p>
+            A programming language that is designed to be easy for a computer to execute; also called “machine language” or “assembly language.”
+          </p>
+          <p>
+            Portability:
+          </p>
+          <p>
+            A property of a program that can run on more then one kind of computer.
+          </p>
+          <p>
+            Interpret:
+          </p>
+          <p>
+            To execute a program in a high-level language by translating it one line at a time.
+          </p>
+          <p>
+            Compile:
+          </p>
+          <p>
+            To translate a program written in a high-level language into a low-level language all at once, in preparation for later execution.
+          </p>
+          <p>
+            Source code:
+          </p>
+          <p>
+            A program written in a high-level language before being compiled.
+          </p>
+          <p>
+            Object code:
+          </p>
+          <p>
+            The output of the compiler after it translates the program.
+          </p>
+          <p>
+            Executable:
+          </p>
+          <p>
+            Another name for object code that is ready to be executed.
+          </p>
+          <p>
+            Prompt:
+          </p>
+          <p>
+            Characters displayed by the interpreter to indicate that it is ready to take input from the user.
+          </p>
+          <p>
+            Script:
+          </p>
+          <p>
+            A program stored in a file (usually one that will be interpreted).
+          </p>
+          <p>
+            Interactive mode:
+          </p>
+          <p>
+            A way of using the Python interpreter by typing commands and expressions at the prompt.
+          </p>
+          <p>
+            Script mode:
+          </p>
+          <p>
+            A way of using the Python interpreter to read and execute statements in a script.
+          </p>
+          <p>
+            Program:
+          </p>
+          <p>
+            A set of instructions that specifies a computation.
+          </p>
+          <p>
+            Algorithm:
+          </p>
+          <p>
+            A general process for solving a category of problems.
+          </p>
+          <p>
+            Bug:
+          </p>
+          <p>
+            An error in a program.
+          </p>
+          <p>
+            Debugging:
+          </p>
+          <p>
+            The process of finding and removing any of the three kinds of programming errors.
+          </p>
+          <p>
+            Syntax:
+          </p>
+          <p>
+            The structure of a program.
+          </p>
+          <p>
+            Syntax error:
+          </p>
+          <p>
+            An error in a program that makes it impossible to parse (and therefore impossible to interpret).
+          </p>
+          <p>
+            Exception:
+          </p>
+          <p>
+            An error that is detected while the program is running.
+          </p>
+          <p>
+            Semantics:
+          </p>
+          <p>
+            The meaning of a program.
+          </p>
+          <p>
+            Semantic error:
+          </p>
+          <p>
+            An error in a program that makes it do something other then what the programmer intended.
+          </p>
+          <p>
+            Natural language:
+          </p>
+          <p>
+            Any one of the spoken languages that evolved naturally.
+          </p>
+          <p>
+            Formal language:
+          </p>
+          <p>
+            Any one of the languages that people have designed for specific purposes, such as representing mathematical ideas or computer programs; all programming languages are formal languages.
+          </p>
+          <p>
+            Token:
+          </p>
+          <p>
+            One of the basic elements of the syntactic structure of a program, analogous to a word in a natural language.
+          </p>
+          <p>
+            Parse:
+          </p>
+          <p>
+            To examine a program and analyze the syntactic structure.
+          </p>
+          <p>
+            Print statement:
+          </p>
+          <p>
+            An instruction that causes the Python interpreter to display a value on the screen.
+          </p>
+        </div>
+        <button type="button" id="myBtn" onclick="myFunction()">Glossary</button>
+        <div class="section">
+          <h4>어려웠던 점</h4>
+        </div>
+        <p>
+          글.
+        </p>
+        <div class="section">
+          <h4>더 알고 싶은 점</h4>
+        </div>
+        <p>
+          (질문)?
+        </p>
+      </div>
+      <div class="card">
+        <h2>전산수학 2</h2>
+        <h4>2021년 9월 9일</h4>
+        <div class="section">
+          <h4>배운 점</h4>
+        </div>
+        <ol>
+          <li>
+            사건의 확률 (Probability of an Event)
+            <p>
+              The Probability of an event A is the sum of the weights of all sample points in A.
+            </p>
+            <ul>
+              <li>0 &le; P(A) &le; 1</li>
+              <li>P(&empty;) = 0, P(S) = 1</li>
+            </ul>
+            <p>
+              Furthermore, if A1, A2, ... is a sequence of mutually exclusive events, then
+            </p>
+            <ul>
+              <li>
+                P(A1 &#8899; A2 &#8899; ...) = P(A1) + P(A2) + ...
+              </li>
+            </ul>
+            <p>
+              If an experiment can result in any one of N different equally likely outcomes, and if exactly n of these outcomes correspond to event A, then the probability of event A is :
+            </p>
+            <ul>
+              <li>P(A) = n / N.</li>
+              <ul>
+                <li>S = { S1, S2, ... , Sn } (finite sample space)</li>
+                <li>P( {S1} ) = ... = P( {Sn} ) (equally likely outcomes)</li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            덧셈 법칙 (Additive Rules)
+            <ul>
+              <li>
+                <p>If A and B are two events, then</p>
+                <p>
+                  P(A &#8899; B) = P(A) + P(B) - P(A &#8898; B)
+                </p>
+                <ul>
+                  <li>
+                    <p>If A and B are mutually exclusive, then</p>
+                    <p>P(A &#8899; B) = P(A) + P(B)</p>
+                  </li>
+                  <li>
+                    <p>
+                      If A1, A2, ... , An are mutually exclusive, then
+                    </p>
+                    <p>
+                      P(A1 &#8899; A2 &#8899; ... &#8899; An) = P(A1) + P(A2) + ... + P(An)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If A1, A2, ... , An is a partition of sample space S, then
+                    </p>
+                    <p>
+                      P(A1 &#8899; A2 &#8899; ... &#8899; An) = P(A1) + P(A2) + ... + P(An) = P(S) = 1
+                    </p>
+                  </li>
+                </ul>
+                partition
+                <ul>
+                  <li>m.e</li>
+                  <li>A1 + ... + An = S</li>
+                </ul>
+              </li>
+              <li>
+                <p>For three events A, B, and C,</p>
+                <p>
+                  P(A &#8899; B &#8899; C) = P(A) + P(B) + P(C) - P(A &#8898; B) - P(B &#8898; C) - P(C &#8898; A) + P(A &#8898; B &#8898; C)
+                </p>
+              </li>
+              <li>
+                <p>
+                  If A and A' are complementary events, then
+                </p>
+                <p>
+                  P(A) + P(A') = 1
+                </p>
+              </li>
+            </ul>
+            덧셈법칙과 여사건 : Bottom-up v.s Top-down
+          </li>
+        </ol>
+        <div class="section">
+          <h4>어려웠던 점</h4>
+        </div>
+        <p>
+          영어로 된 수학 용어 말고는 없음.
+        </p>
+        <div class="section">
+          <h4>더 알고 싶은 점</h4>
+        </div>
+        <p>
+          P(A &#8899; B &#8899; C) = ~ 는 어떻게 증명하지?.
+        </p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <img width="100%" src="프로필.jpg" alt="no image">
+        <p>프로필</p>
+        <p>Pink(droon78)</p>
+      </div>
+      <div class="card">
+        <h3>인기글</h3>
+        <div class="fakeimg">Image</div>
+        <div class="fakeimg">Image</div>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <h3>이웃 추가</h3>
+        <p>이웃 **명</p>
+      </div>
+    </div>
+ </div>
+
+<div class="footer">
+      <p>Copyright© Pink<br>All rights reserved.</p>
+</div>
+
+</body>
+</html>

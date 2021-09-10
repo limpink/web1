@@ -1,0 +1,217 @@
+/* No select + Highlight color */
+* {user-select: none;}
+
+*::selection {background-color: none;}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {font-size: 50px;}
+
+/* Style the top navigation bar */
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav li {float: left;}
+
+/* Style the topnav links */
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav li a:hover:not(.active) {background-color: black;}
+
+.topnav .active {background-color: #04aa6d;}
+
+/* Create dropdown buttons */
+/* Change color of dropdown button on hover */
+.dropdown:hover .dropbtn {background-color: red;}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,2);
+  z-index: 1;
+}
+
+/* Link inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.pagination {
+  align-self: center;
+  display: inline-block;
+  margin: 16px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.pagination a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.center {text-align: center;}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+section {margin-top: 32px;}
+
+.card ol,.card ul {padding-left: 16px;}
+
+/* Read more buttons */
+button {
+  background-color: #616161;
+  border: none;
+  color: white;
+  padding: 4px 16px;
+  font-size: 16px;
+}
+
+#more {display: none;}
+
+#more2 {display: none;}
+
+#more3 {display: none;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav li a {
+    float: none;
+    width: 100%;
+  }
+}
+
+ol ol {list-style-type: upper-alpha}
+
+li {line-height: 3;}
+
+/* Creates custom table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/*
+table tr:nth-child(even){background-color: #f2f2f2;}
+*/
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top, padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
